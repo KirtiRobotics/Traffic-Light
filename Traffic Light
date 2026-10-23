@@ -1,0 +1,22 @@
+//Arduino Uno R3
+//
+#define ledG 13
+#define ledR 10
+
+
+void setup() {
+  // put your setup code here, to run once: 
+  pinMode(ledG, OUTPUT);
+  pinMode(ledR, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+    digitalWrite(ledG, HIGH);
+    delay(2000);
+    digitalWrite(ledG, LOW);
+    digitalWrite(ledR, HIGH);
+    delay(1000);
+    digitalWrite(ledR, LOW);
+  }
